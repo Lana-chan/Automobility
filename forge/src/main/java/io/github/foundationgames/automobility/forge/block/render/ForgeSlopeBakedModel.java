@@ -79,8 +79,11 @@ public class ForgeSlopeBakedModel extends SlopeBakedModel {
         if (renderType == null || this.getRenderTypes(state, rand, data).contains(renderType)) {
             var quads = new ArrayList<BakedQuad>();
             var geo = new ForgeGeometryBuilder(this.settings.getRotation().getMatrix(), side, quads);
+            TextureAtlasSprite sprite = data.get(FRAME_SPRITE);
 
-            this.buildSlopeGeometry(data.get(FRAME_SPRITE), geo, unwrap(data.get(FRAME_COLOR)), unwrap(data.get(BORDERED_LEFT)), unwrap(data.get(BORDERED_RIGHT)));
+            if (sprite != null) {
+                this.buildSlopeGeometry(sprite, geo, unwrap(data.get(FRAME_COLOR)), unwrap(data.get(BORDERED_LEFT)), unwrap(data.get(BORDERED_RIGHT)));
+            }
 
             return quads;
         }
