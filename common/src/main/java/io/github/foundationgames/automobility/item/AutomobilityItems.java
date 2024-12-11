@@ -57,7 +57,15 @@ public enum AutomobilityItems {;
                 new AutomobilePrefab(Automobility.rl("shopping_cart"), AutomobileFrame.SHOPPING_CART, AutomobileWheel.STEEL, AutomobileEngine.STONE),
                 new AutomobilePrefab(Automobility.rl("c_arr"), AutomobileFrame.C_ARR, AutomobileWheel.OFF_ROAD, AutomobileEngine.DIAMOND),
                 new AutomobilePrefab(Automobility.rl("pineapple"), AutomobileFrame.PINEAPPLE, AutomobileWheel.TRACTOR, AutomobileEngine.GOLD),
-                new AutomobilePrefab(Automobility.rl("jeep_green"), AutomobileFrame.JEEP_GREEN, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON)
+                new AutomobilePrefab(Automobility.rl("jeep_red"), AutomobileFrame.JEEP_RED, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_orange"), AutomobileFrame.JEEP_ORANGE, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_yellow"), AutomobileFrame.JEEP_YELLOW, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_green"), AutomobileFrame.JEEP_GREEN, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_blue"), AutomobileFrame.JEEP_BLUE, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_indigo"), AutomobileFrame.JEEP_INDIGO, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_violet"), AutomobileFrame.JEEP_VIOLET, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_white"), AutomobileFrame.JEEP_WHITE, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("jeep_black"), AutomobileFrame.JEEP_BLACK, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON)
         );
     }
 

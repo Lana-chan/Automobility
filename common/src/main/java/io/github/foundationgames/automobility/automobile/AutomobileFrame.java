@@ -60,7 +60,15 @@ public record AutomobileFrame(
     public static final AutomobileFrame GREEN_TRACTOR = REGISTRY.register(tractor("green"));
     public static final AutomobileFrame BLUE_TRACTOR = REGISTRY.register(tractor("blue"));
 
+    public static final AutomobileFrame JEEP_RED = REGISTRY.register(jeep("red"));
+    public static final AutomobileFrame JEEP_ORANGE = REGISTRY.register(jeep("orange"));
+    public static final AutomobileFrame JEEP_YELLOW = REGISTRY.register(jeep("yellow"));
     public static final AutomobileFrame JEEP_GREEN = REGISTRY.register(jeep("green"));
+    public static final AutomobileFrame JEEP_BLUE = REGISTRY.register(jeep("blue"));
+    public static final AutomobileFrame JEEP_INDIGO = REGISTRY.register(jeep("indigo"));
+    public static final AutomobileFrame JEEP_VIOLET = REGISTRY.register(jeep("violet"));
+    public static final AutomobileFrame JEEP_WHITE = REGISTRY.register(jeep("white"));
+    public static final AutomobileFrame JEEP_BLACK = REGISTRY.register(jeep("black"));
 
     public static final AutomobileFrame SHOPPING_CART = REGISTRY.register(
             new AutomobileFrame(
@@ -155,7 +163,7 @@ public record AutomobileFrame(
     private static AutomobileFrame tractor(String color) {
         return new AutomobileFrame(
                 Automobility.rl(color+"_tractor"),
-                0.9f,
+                1f,
                 new FrameModel(
                         Automobility.rl("textures/entity/automobile/frame/"+color+"_tractor.png"),
                         Automobility.rl("frame_tractor"),
@@ -201,7 +209,7 @@ public record AutomobileFrame(
     private static AutomobileFrame jeep(String color) {
         return new AutomobileFrame(
                 Automobility.rl("jeep_"+color),
-                1.0f,
+                0.9f,
                 new FrameModel(
                         Automobility.rl("textures/entity/automobile/frame/jeep_"+color+".png"),
                         Automobility.rl("frame_jeep"),
