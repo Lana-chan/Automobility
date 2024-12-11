@@ -56,7 +56,8 @@ public enum AutomobilityItems {;
                 new AutomobilePrefab(Automobility.rl("blue_tractor"), AutomobileFrame.BLUE_TRACTOR, AutomobileWheel.TRACTOR, AutomobileEngine.COPPER),
                 new AutomobilePrefab(Automobility.rl("shopping_cart"), AutomobileFrame.SHOPPING_CART, AutomobileWheel.STEEL, AutomobileEngine.STONE),
                 new AutomobilePrefab(Automobility.rl("c_arr"), AutomobileFrame.C_ARR, AutomobileWheel.OFF_ROAD, AutomobileEngine.DIAMOND),
-                new AutomobilePrefab(Automobility.rl("pineapple"), AutomobileFrame.PINEAPPLE, AutomobileWheel.TRACTOR, AutomobileEngine.GOLD)
+                new AutomobilePrefab(Automobility.rl("pineapple"), AutomobileFrame.PINEAPPLE, AutomobileWheel.TRACTOR, AutomobileEngine.GOLD),
+                new AutomobilePrefab(Automobility.rl("jeep_green"), AutomobileFrame.JEEP_GREEN, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON)
         );
     }
 

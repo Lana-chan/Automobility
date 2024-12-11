@@ -28,6 +28,7 @@ import io.github.foundationgames.automobility.automobile.render.frame.RickshawFr
 import io.github.foundationgames.automobility.automobile.render.frame.ShoppingCartFrameModel;
 import io.github.foundationgames.automobility.automobile.render.frame.StandardFrameModel;
 import io.github.foundationgames.automobility.automobile.render.frame.TractorFrameModel;
+import io.github.foundationgames.automobility.automobile.render.frame.JeepFrameModel;
 import io.github.foundationgames.automobility.automobile.render.item.ItemRenderableAutomobile;
 import io.github.foundationgames.automobility.automobile.render.wheel.CarriageWheelModel;
 import io.github.foundationgames.automobility.automobile.render.wheel.OffRoadWheelModel;
@@ -138,6 +139,7 @@ public class AutomobilityClient {
         libs.modelLayer(CARRFrameModel.MODEL_LAYER);
         libs.modelLayer(PineappleFrameModel.MODEL_LAYER);
         libs.modelLayer(RickshawFrameModel.MODEL_LAYER);
+        libs.modelLayer(JeepFrameModel.MODEL_LAYER);
 
         libs.modelLayer(StandardWheelModel.MODEL_LAYER);
         libs.modelLayer(OffRoadWheelModel.MODEL_LAYER);

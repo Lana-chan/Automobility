@@ -60,6 +60,8 @@ public record AutomobileFrame(
     public static final AutomobileFrame GREEN_TRACTOR = REGISTRY.register(tractor("green"));
     public static final AutomobileFrame BLUE_TRACTOR = REGISTRY.register(tractor("blue"));
 
+    public static final AutomobileFrame JEEP_GREEN = REGISTRY.register(jeep("green"));
+
     public static final AutomobileFrame SHOPPING_CART = REGISTRY.register(
             new AutomobileFrame(
                     Automobility.rl("shopping_cart"),
@@ -192,6 +194,29 @@ public record AutomobileFrame(
                         3,
                         17.5f,
                         14.5f
+                )
+        );
+    }
+
+    private static AutomobileFrame jeep(String color) {
+        return new AutomobileFrame(
+                Automobility.rl("jeep_"+color),
+                1.0f,
+                new FrameModel(
+                        Automobility.rl("textures/entity/automobile/frame/jeep_"+color+".png"),
+                        Automobility.rl("frame_jeep"),
+                        new WheelBase(
+                                new WheelBase.WheelPos(-12, -6.8f, 1, 0, WheelBase.WheelEnd.BACK, WheelBase.WheelSide.LEFT),
+                                new WheelBase.WheelPos(-12, 6.8f, 1, 180, WheelBase.WheelEnd.BACK, WheelBase.WheelSide.RIGHT),
+                                new WheelBase.WheelPos(12, -6.8f, 1, 0, WheelBase.WheelEnd.FRONT, WheelBase.WheelSide.LEFT),
+                                new WheelBase.WheelPos(12, 6.8f, 1, 180, WheelBase.WheelEnd.FRONT, WheelBase.WheelSide.RIGHT)
+                        ),
+                        45,
+                        7,
+                        9,
+                        2,
+                        18,
+                        22
                 )
         );
     }
