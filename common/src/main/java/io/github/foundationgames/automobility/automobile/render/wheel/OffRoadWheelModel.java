@@ -18,5 +18,6 @@ public class OffRoadWheelModel extends BaseModel {
     @Override
     protected void prepare(PoseStack matrices) {
         matrices.mulPose(Axis.YP.rotationDegrees(-90));
+        matrices.scale(0.62f, 0.62f, 0.62f);
     }
 }
