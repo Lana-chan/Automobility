@@ -70,6 +70,13 @@ public record AutomobileFrame(
     public static final AutomobileFrame JEEP_WHITE = REGISTRY.register(jeep("white"));
     public static final AutomobileFrame JEEP_BLACK = REGISTRY.register(jeep("black"));
 
+    public static final AutomobileFrame BEETLE_PINK = REGISTRY.register(beetle("pink"));
+    public static final AutomobileFrame BEETLE_TEAL = REGISTRY.register(beetle("teal"));
+    public static final AutomobileFrame BEETLE_BLUE = REGISTRY.register(beetle("blue"));
+    public static final AutomobileFrame BEETLE_YELLOW = REGISTRY.register(beetle("yellow"));
+    public static final AutomobileFrame BEETLE_MAUVE = REGISTRY.register(beetle("mauve"));
+    public static final AutomobileFrame BEETLE_CREAM = REGISTRY.register(beetle("cream", 0.55f));
+
     public static final AutomobileFrame SHOPPING_CART = REGISTRY.register(
             new AutomobileFrame(
                     Automobility.rl("shopping_cart"),
@@ -224,7 +231,34 @@ public record AutomobileFrame(
                         9,
                         2,
                         18,
-                        22
+                        19
+                )
+        );
+    }
+
+    private static AutomobileFrame beetle(String color) {
+        return beetle(color, 0.65f);
+    }
+
+    private static AutomobileFrame beetle(String color, float weight) {
+        return new AutomobileFrame(
+                Automobility.rl("beetle_"+color),
+                weight,
+                new FrameModel(
+                        Automobility.rl("textures/entity/automobile/frame/beetle_"+color+".png"),
+                        Automobility.rl("frame_beetle"),
+                        new WheelBase(
+                                new WheelBase.WheelPos(-15, -9f, 1, 0, WheelBase.WheelEnd.BACK, WheelBase.WheelSide.LEFT),
+                                new WheelBase.WheelPos(-15, 9f, 1, 180, WheelBase.WheelEnd.BACK, WheelBase.WheelSide.RIGHT),
+                                new WheelBase.WheelPos(14.5f, -9f, 1, 0, WheelBase.WheelEnd.FRONT, WheelBase.WheelSide.LEFT),
+                                new WheelBase.WheelPos(14.5f, 9f, 1, 180, WheelBase.WheelEnd.FRONT, WheelBase.WheelSide.RIGHT)
+                        ),
+                        45,
+                        2,
+                        14,
+                        2,
+                        23,
+                        24
                 )
         );
     }

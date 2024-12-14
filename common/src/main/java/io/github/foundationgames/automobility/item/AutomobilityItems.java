@@ -65,7 +65,13 @@ public enum AutomobilityItems {;
                 new AutomobilePrefab(Automobility.rl("jeep_indigo"), AutomobileFrame.JEEP_INDIGO, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
                 new AutomobilePrefab(Automobility.rl("jeep_violet"), AutomobileFrame.JEEP_VIOLET, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
                 new AutomobilePrefab(Automobility.rl("jeep_white"), AutomobileFrame.JEEP_WHITE, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
-                new AutomobilePrefab(Automobility.rl("jeep_black"), AutomobileFrame.JEEP_BLACK, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON)
+                new AutomobilePrefab(Automobility.rl("jeep_black"), AutomobileFrame.JEEP_BLACK, AutomobileWheel.OFF_ROAD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_pink"), AutomobileFrame.BEETLE_PINK, AutomobileWheel.STANDARD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_teal"), AutomobileFrame.BEETLE_TEAL, AutomobileWheel.STANDARD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_blue"), AutomobileFrame.BEETLE_BLUE, AutomobileWheel.STANDARD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_yellow"), AutomobileFrame.BEETLE_YELLOW, AutomobileWheel.STANDARD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_mauve"), AutomobileFrame.BEETLE_MAUVE, AutomobileWheel.STANDARD, AutomobileEngine.IRON),
+                new AutomobilePrefab(Automobility.rl("beetle_cream"), AutomobileFrame.BEETLE_CREAM, AutomobileWheel.STREET, AutomobileEngine.GOLD)
         );
     }
 

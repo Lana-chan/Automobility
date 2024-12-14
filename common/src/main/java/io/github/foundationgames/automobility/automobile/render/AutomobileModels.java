@@ -24,6 +24,7 @@ import io.github.foundationgames.automobility.automobile.render.frame.ShoppingCa
 import io.github.foundationgames.automobility.automobile.render.frame.StandardFrameModel;
 import io.github.foundationgames.automobility.automobile.render.frame.TractorFrameModel;
 import io.github.foundationgames.automobility.automobile.render.frame.JeepFrameModel;
+import io.github.foundationgames.automobility.automobile.render.frame.BeetleFrameModel;
 import io.github.foundationgames.automobility.automobile.render.wheel.CarriageWheelModel;
 import io.github.foundationgames.automobility.automobile.render.wheel.OffRoadWheelModel;
 import io.github.foundationgames.automobility.automobile.render.wheel.StandardWheelModel;
@@ -69,6 +70,7 @@ public enum AutomobileModels {;
         register(Automobility.rl("frame_motorcar"), MotorcarFrameModel::new);
         register(Automobility.rl("frame_rickshaw"), RickshawFrameModel::new);
         register(Automobility.rl("frame_jeep"), JeepFrameModel::new);
+        register(Automobility.rl("frame_beetle"), BeetleFrameModel::new);
 
         register(Automobility.rl("wheel_standard"), StandardWheelModel::new);
         register(Automobility.rl("wheel_off_road"), OffRoadWheelModel::new);

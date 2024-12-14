@@ -21,7 +21,7 @@ public record AutomobileWheel(
     );
 
     public static final AutomobileWheel STANDARD = REGISTRY.register(
-            new AutomobileWheel(Automobility.rl("standard"), 0.6f, 0.5f, new WheelModel(3, 3, Automobility.rl("textures/entity/automobile/wheel/standard.png"), Automobility.rl("wheel_standard")))
+            new AutomobileWheel(Automobility.rl("standard"), 0.6f, 0.5f, new WheelModel(3.325f, 3, Automobility.rl("textures/entity/automobile/wheel/standard.png"), Automobility.rl("wheel_standard")))
     );
 
     public static final AutomobileWheel OFF_ROAD = REGISTRY.register(

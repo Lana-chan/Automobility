@@ -1,0 +1,17 @@
+{
+	"type": "automobility:auto_mechanic_table",
+	"category": "automobility:frames",
+	"sortnum": 604,
+	"ingredients": [
+			{"item": "minecraft:copper_ingot"},
+			{"item": "minecraft:iron_ingot"},
+			{"item": "minecraft:purple_dye"},
+			{"item": "minecraft:leather"},
+			{"item": "minecraft:iron_bars"},
+			{"item": "minecraft:spider_eye"}
+	],
+	"result": {
+			"item": "automobility:automobile_frame",
+			"component": "automobility:beetle_mauve"
+	}
+}
